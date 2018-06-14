@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    background-color: rgb(173, 173, 173);
+}
+  
+.scroling{
+    background-color: #fff;
+    scroll-snap-destination: right;
+    width: 50%;
+}
+table{
+    float: left;
+}
+td{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    min-width: 70px;
+}
+.hours{
+    float: left;
+    font-size: 90%;
+    line-height: 0.1;
+}
+.min{   
+    float: left;
+    font-size: 90%;
+    line-height: 0.1;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sep{
+    float: left;
+    font-size: 90%;
+    line-height: 0.1;
+    margin: 0px;
+    padding: 0px;
+}
+.sec{
+    font-size: 90%;
+    float: left;
+    line-height: 0.1;
+    margin: 0px;
+    padding: 0px;
+}
+.Date{
+    float: left;
+    font-size: 70%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.line
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 2px;
+    margin-top: -10px;
+}
+.lineUP
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 2px;
+    
+}
+.right{
+    display: inline-block;
+   
+}
+.UpFooter{
+    text-align: right;
+    position: relative;
+    top: 0px;
+    height: 30px;
+    cursor: url("arrowup.cur"), default;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+.leftF{
+    position: absolute;
+    left: 0px;
+    display: inline-block;   
+    height: 30px; 
+}
+.rightF{
+    margin: 0px;
+    display: inline-block;
+    height: 30px;
+}
+
+.clock{
+    cursor: pointer;
+    display: inline-block;
+}
+.clock>a:hover{
+    color: white;
+}
+.clock>a{
+    color: black;
+}
+#Footer>.DownFooter{
+    display: block;   
+}
+#Footer.Close>.DownFooter{    
+   display: none;
+}
+
+.toplefttooltip, .toprighttooltip,.toptooltip,.downlefttooltip,.downrighttooltip,.downtooltip{
+    background-color: #fff;
+    min-width: 150px;
+    min-height: 50px;
+    border:  2px solid black;
+    position: absolute;
+    display: none;
+}
+.tolltipUP{
+    top: 30px;
+    position: fixed;    
+}
+
+
+.toprighttooltip{
+    right: 0px;
+}
+.toptooltip{
+    left: calc(50% - 75px);
+}
+.downrighttooltip{
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+}
+.downtooltip{
+    left: calc(50% - 75px);
+    bottom: 0px;
+    position: fixed;
+}
+.downlefttooltip{
+    bottom: 0px;
+    position: fixed;
+}
+
+a[href="close"]>i{
+    color: black;
+    font-size: 70%;
+    position: absolute;
+    right: 0px;
+}
